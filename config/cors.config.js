@@ -8,7 +8,7 @@ export const configureCors = () => {
 
       const allowedOrigins = [
         //"http://localhost:5173", // React dev server
-        "https://email-ummarizer-frontend-zdh1.vercel.app/", // Production
+        "https://email-ummarizer-frontend-zdh1.vercel.app", // Production
       ];
       if (!origin || allowedOrigins.indexOf(origin) !== -1) {
         callback(null, true);
